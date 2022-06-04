@@ -1,0 +1,129 @@
+$color: #051c82;
+input {
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 2px #051c82;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, $color 5%);
+  background-position: -200px 0;
+  background-repeat: no-repeat;
+  color: darken(#051c82, 20%);
+  &:focus,
+  &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      font-size: 13px;
+      visibility: visible !important;
+    }
+  }
+}
+
+.parentBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskDisplay {
+  margin-top: 1em;
+}
+.completebtn {
+  background: #39ff14;
+  border-radius: 3px;
+  margin-left: 0.25em;
+}
+.completebtn:hover {
+  background: #cdff03;
+  cursor: pointer;
+}
+
+.subTaskAdd {
+  display: flex;
+  padding: 2px;
+}
+
+.subTaskList {
+  margin-left: 2em;
+}
+
+.subTaskItems {
+  margin-bottom: 0.4em;
+  margin-top: 0.2em;
+}
+
+.taskInput {
+  width: 20em;
+}
+
+.taskAdd {
+  margin-top: 1.5em;
+  bottom: 3em;
+}
+/* CSS */
+.primarybtn {
+  margin-top: 0.5em;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  max-height: 1em;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.primarybtn:active,
+.primarybtn:hover {
+  outline: 0;
+}
+
+.primarybtn:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.addBtn {
+  color: black;
+  background: #39ff14;
+  border-radius: 3px;
+  margin-left: 0.25em;
+  font-size: 0.5em;
+  margin-top: 1.25em;
+}
+.addBtn:hover {
+  background: #cdff03;
+  cursor: pointer;
+}
+
+body {
+  color: black;
+  height: 100vh;
+  background: linear-gradient(
+    200.96deg,
+    #fedc2a -29.09%,
+    #dd5789 51.77%,
+    #7a2c9e 129.35%
+  );
+  font-family: sans-serif;
+}
